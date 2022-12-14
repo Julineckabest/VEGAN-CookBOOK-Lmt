@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Pacifico&display=swap');
+
+#title-Tag-Line {
+    font-size: 20px;
+    font-family: 'Klee One', cursive;
+  }
+  
+  /* form animation starts */
+  .form {
+    font-family: 'Klee One', cursive;
+    background: rgb(247, 229, 202);
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    position: relative;
+    border-top: 5px solid #0e3721;
+  /*   z-index: 1; */
+    animation: bounce 1.5s infinite;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 1.3em;
+  }
+  
+  .title{
+    display: block;
+    font-family: 'Pacifico', cursive;
+    margin: 10px auto 5px;
+    width: 300px;
+  }
+  #magazine{
+    margin: 0 auto 5px 80px;
+  }
+  
+  .pageTitle{
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .secondaryTitle{
+    color: rgb(183, 183, 152);
+  }
+  
+  .name {
+    background-color: #ebebeb;
+    color: white;
+    font-family: 'Klee One', cursive;
+  }
+  .name:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .email {
+    background-color: #ebebeb;
+    height: 2em;
+    font-family: 'Klee One', cursive;
+  }
+  
+  .email:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 30px;
+    width: 380px;
+    transition: ease 0.5s;
+  }
+  
+  .message {
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem;
+    font-family: 'Klee One', cursive;
+  }
+  
+  .message:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+    font-family: 'Klee One', cursive;
+  }
+  
+  .formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    font-family: 'Klee One', cursive;
+  }
+  
+  .submit {
+    width: 200px;
+    color: white;
+    background-color: #de9a34;
+    font-size: 20px;
+    font-family: 'Klee One', cursive;
+  }
+  
+  .submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 300px;
+    border-top: 5px solid #0e3750;
+    border-radius: 0%;
+  }
+  
+  @keyframes bounce {
+    0% {
+      tranform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(0, 8px);
+    }
+  } 
+  
+  .pics-back {
+    display: -webkit-box;
+
+    margin-left: auto;
+  }
+
+  .contacts-div {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "left-div right-div"; 
+  }
+  .left-div { grid-area: left-div; }
+  .right-div { grid-area: right-div; }
+
+  #feedback-socmedia-icons {
+    display: none;
+  }
+
+  #feedback-socmedia-icons-smallres {
+    display: none;
+  }
+
+@media only screen and (max-width: 768px) {
+
+  .contacts-div {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .form {
+    margin-top: 10%;
+    position: relative;
+  }
+  #feedback-socmedia-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  #feedback-socmedia-icons {
+    display: none;
+  }
+
+  #feedback-socmedia-icons-smallres {
+    display: grid;
+  }
+  .first-three{
+    margin-left: 10%;
+    display: flex;
+    gap: 30%;
+  }
+  .second-two{
+    margin-left: 30%;
+    display: flex;
+    gap: 40%;
+  }
+
+}
+

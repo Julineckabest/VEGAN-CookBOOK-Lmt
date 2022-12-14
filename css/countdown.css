@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .countdown-div{
+    background-color: aliceblue;
+    color: rgb(184, 120, 120);
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+  }
+  
+  h1 {
+    font-weight: normal;
+    font-family: 'Handlee', cursive;
+    letter-spacing: .80rem;
+    text-transform: uppercase;
+    color: rgb(184, 120, 120);
+    
+  }
+  
+  .countdown-li {
+    display: inline-block;
+    font-size: 0.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  .countdown-li span {
+    display: block;
+    font-size: 2.0rem;
+  }
+  
+  
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }

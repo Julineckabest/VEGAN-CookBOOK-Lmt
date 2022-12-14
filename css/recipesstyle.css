@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Pacifico&display=swap');
+
+body {
+  font-family: 'Klee One', cursive;
+}
+
+h3 {
+  font-family: 'Pacifico', cursive;
+}
+
+#low-res-recepies {
+  display: none;
+}
+
+.recipes-divs {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "fnch-div"
+      "haggies-div"
+      "shpie-div";
+  }
+  
+  .fnch-div {  display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 16px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". interactive-div1";
+    grid-area: fnch-div;
+  }
+  
+  .interactive-div1 { grid-area: interactive-div1; }
+  
+  .haggies-div {  display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 17px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". interactive-div2";
+    grid-area: haggies-div;
+  }
+  
+  .interactive-div2 { grid-area: interactive-div2; }
+  
+  .shpie-div {  display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 18px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". interactive-div3";
+    grid-area: shpie-div;
+  }
+  
+  .interactive-div3 { grid-area: interactive-div3; }
+  
+
+h1 {
+  font-family: 'Handlee', cursive;
+}
+  
+/*Fi&Chips Rating */
+
+.star-rating input {
+  display: none;
+}
+
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 20px auto;
+  position: relative;
+}
+
+.star-rating > label {
+  width: 30px;
+  height: 30px;
+  font-family: Verdana;
+  font-size: 30px;
+  color: orange;
+  transition: 0.2s ease;
+}
+
+.star-rating label::before {
+  position: absolute;
+  content: '\2606';
+  top: 0px;
+  line-height: 26px; 
+}
+
+label {
+  position: relative;
+
+}
+
+.star-rating input:checked ~ label:before {
+  content: '\2605';
+}
+
+@-moz-document url-prefix() {
+  .star-rating input:checked ~ label:before {
+      font-size: 36px;
+      line-height: 21px;
+  }
+}
+
+.star-rating label:hover {
+  color: #ad6200;
+  transition: 0.2s ease;
+}
+
+.star-rating label:active::before {
+  transform: scale(1.1);
+}
+
+/* Haggies Ratting */
+
+.star-rating-haggies input {
+  display: none;
+}
+
+
+.star-rating-haggies {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 20px auto;
+  position: relative;
+}
+
+.star-rating-haggies > label {
+  width: 30px;
+  height: 30px;
+  font-family: Verdana;
+  font-size: 30px;
+  color: orange;
+  transition: 0.2s ease;
+}
+
+.star-rating-haggies label::before {
+  position: absolute;
+  content: '\2606';
+  top: 0px;
+  line-height: 26px; 
+}
+
+label {
+  position: relative;
+
+}
+
+.star-rating-haggies input:checked ~ label:before {
+  content: '\2605';
+}
+
+@-moz-document url-prefix() {
+  .star-rating-haggies input:checked ~ label:before {
+      font-size: 36px;
+      line-height: 21px;
+  }
+}
+
+.star-rating-haggies label:hover {
+  color: #ff69b4;
+  transition: 0.2s ease;
+}
+
+.star-rating-haggies label:active::before {
+  transform: scale(1.1);
+}
+
+/* Sheperd.Pie Ratting */
+
+.star-rating-shep input {
+  display: none;
+}
+
+
+.star-rating-shep  {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: 10px auto;
+  position: relative;
+}
+
+.star-rating-shep  > label {
+  width: 30px;
+  height: 30px;
+  font-family: Verdana;
+  font-size: 30px;
+  color: orange;
+  transition: 0.2s ease;
+}
+
+.star-rating-shep  label::before {
+  position: absolute;
+  content: '\2606';
+  top: 0px;
+  line-height: 26px; 
+}
+
+label {
+  position: relative;
+
+}
+
+.star-rating-shep  input:checked ~ label:before {
+  content: '\2605';
+}
+
+@-moz-document url-prefix() {
+  .star-rating-shep  input:checked ~ label:before {
+      font-size: 36px;
+      line-height: 21px;
+  }
+}
+
+.star-rating-shep  label:hover {
+  color: #ff69b4;
+  transition: 0.2s ease;
+}
+
+.star-rating-shep label:active::before {
+  transform: scale(1.1);
+}
+
+#smartphone-res-recepies {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #high-res-recepies {
+    display: none;
+  }
+  #low-res-recepies {
+    display: flex;
+  }
+  .recipes-divs {
+    display: flex;
+    flex-direction: column;
+  }
+  .rec-picture {
+    width: 100%;
+  }
+  .rec-picture {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    #high-res-recepies {
+      display: none;
+    }
+    #low-res-recepies {
+      display: none;
+    }
+
+    #smartphone-res-recepies {
+      display: flex;
+    }
+  }
+
+  
+  .fnch-div, .haggies-div, .shpie-div {
+    display: flex;
+    flex-direction: column;
+  }
+  }
+
+  /*VIDEs YOUTUBE */
+
+  .video-yt {
+
+    border: none;
+  }
