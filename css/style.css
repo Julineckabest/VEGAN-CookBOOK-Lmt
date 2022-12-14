@@ -514,6 +514,13 @@ border: solid 2px #0066cc;
 }
 
 @media only screen and (max-width: 480px) {
+      .navbar {
+      width: 250px;
+      height: 70px;
+
+
+    }
+    
   #about-socmedia-icons-smallres {
     display: grid;
   }
