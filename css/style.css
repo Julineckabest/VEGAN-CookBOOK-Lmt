@@ -387,7 +387,7 @@ margin: auto;
   user-select: none;
   display: flex;
   justify-content: flex-start;
-  background-color: green;
+  background-color: #ed7D31;
   margin-bottom: 40px;
 }
 
@@ -404,7 +404,7 @@ margin: auto;
   user-select: none;
   display: flex;
   justify-content: flex-end;
-  background-color: red;
+  background-color: #ed7D31;
 }
 
 
