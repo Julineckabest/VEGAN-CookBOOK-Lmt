@@ -183,6 +183,11 @@
     display: flex;
     gap: 40%;
   }
+    
+  .formEntry {
+    min-width: none;
+    width: 70%;
+  }
 
 }
 
